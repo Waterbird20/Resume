@@ -1,0 +1,267 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+% \usepackage{tikz}
+% \usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{\large#1} & \textbf{\small #2} \\
+		\textit{\large#3} & \textit{\small #4} \\
+		
+	\end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	
+	
+	\begin{center}
+		{\Huge \scshape Donghun Jung} \\ \vspace{1pt}
+		%city,state \\ \vspace{1pt}
+		\small \href{tel:+82-10-9597-1101}{ \raisebox{-0.1\height}\faPhone\ \underline{+82-10-9597-1101} ~} \href{mailto:atompioneer@g.skku.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{atompioneer@g.skku.edu}} ~ 
+		\href{}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{}}  ~
+		\href{}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Waterbird20}} ~
+		\vspace{-8pt}
+	\end{center}
+	
+	
+	%-----------EDUCATION-----------
+	\section{EDUCATION}
+	%\hspace{0.03\textwidth}
+	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{\large Sungkyunkwan University} & \textbf{\small Mar 2020 - Present} \\
+		College of Natural Science & \small Suwan, Korea \\ 
+        \\
+		\textit{\large Bachelor of Physics} & GPA : 4.42/4.50\\
+        & Credits : 58 \\
+		\textit{\large Bachelor of Computer Science and Engineering(Dual Major)} & GPA : 3.83/4.50\\
+        & Credits : 24 \\
+		& Overall GPA : 4.25/4.50 \\
+        & Total Credits : 141
+		
+	\end{tabular*}\vspace{-7pt}
+
+	%-----------EXPERIENCE-----------
+	\section{RESEARCH EXPERIENCE}
+	
+	\resumeSubHeadingListStart
+	\resumeSubheading{Experimental Gravitational-wave Research Lab \href{https://khlee542.wixsite.com/mysite}{\raisebox{-0.1\height}\faExternalLink }}{Aug 2021 -- Jun 2022} 
+	{\underline{Undergraduate Internship}}{SungKyunKwan University, Department of Physics}
+	\resumeItemListStart
+	\resumeItem{Si Sample Spot Detection Method in Transmission Electron Microscopy}
+	\resumeItem{Callibration Factor Calculation from Si Sample Spot in Transmission Electron Microscopy}
+	\resumeItem{Fluctuation Electron Microscopy study}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+	\vspace{-12pt}
+
+ 	\resumeSubHeadingListStart
+	\resumeSubheading{Condensed-Matter Theory Group \href{http://web.skku.edu/~cmpt/}{\raisebox{-0.1\height}\faExternalLink }}{Jan 2023 -- Present} 
+	{\underline{Undergraduate Internship}}{SungKyunKwan University, Department of Physics}
+	\resumeItemListStart
+	\resumeItem{Conducting research on Andreev bound states and Majorana qubits as part of my graduation thesis}
+        \resumeItem{Applying theories and models to materials for quantum computing and other technological applications}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+	\vspace{-12pt}
+
+  	\resumeSubHeadingListStart
+	\resumeSubheading{KIST Center for Quantum Information \href{https://quantum.kist.re.kr/index.php}{\raisebox{-0.1\height}\faExternalLink }}{Feb 2023 -- Present} 
+	{\underline{Undergraduate Internship}}{Korea Institute of Science and Technology(KIST)}
+	\resumeItemListStart
+	\resumeItem{Conducting research on Andreev bound states and Majorana qubits for my graduation thesis}
+        \resumeItem{Applying theories and models to materials for quantum computing and other technological applications}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+	\vspace{-12pt}
+	
+    \section{AWARDS AND SCHOLARSHIP}
+	\resumeSubHeadingListStart
+	\resumeSubheading{The Presidential Science Scholarship}{Jun 2020 - Present}{Merit Scholarship
+	}{Korea Student Aid Foundation}
+	\resumeItemListStart
+	\resumeItem{Full tuition granted for all semesters}
+	\resumeItem{Additional KRW 2.5 million per semester for students of academic excellence}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+ 
+    \resumeSubHeadingListStart
+	\resumeSubheading{Recommendation Scholarship}{Jan 2022}{Merit Scholarship}{SungKyunKwan University, Department of Physics}
+	\resumeItemListStart
+	\resumeItem{KRW 1 million}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+
+     \resumeSubHeadingListStart
+	\resumeSubheading{Global Leader Learning Experience Scholarship}{Feb 2023}{Merit Scholarship}{SungKyunKwan University, Department of Physics}
+	\resumeItemListStart
+	\resumeItem{Received a KRW 0.4 million award for successful leadership and performance as a group leader}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	%-----------Research Interest-------------
+	\section{RESEARCH INTEREST}
+	
+	\textbf{Condensed Matter Physics/Solid State Physics/Many-body particle physics}
+
+	\vspace{7pt}
+	
+	\textbf{Quantum Computing/Quantum Information}
+	
+	% \vspace{7pt}
+	
+	% \textbf{Reinforced Learning}
+
+	%------Skills-------
+	% \section{TECHNICAL SKILLS}
+	% \textbf{Language}
+	% \resumeItemListStart
+	% \resumeItem{Experienced : Korean(Mother tongue)}
+	% \resumeItem{Familiar : English}
+	% \resumeItemListEnd
+	
+	% \hspace{0.3\textheight}
+	
+	% \textbf{Programming Language}
+	% \resumeItemListStart
+	% \resumeItem{Experienced : Python, C}
+	% \resumeItem{Familiar : C++, Java, JavaScript, SQL}
+	% \resumeItemListEnd
+	
+	% \hspace{0.3\textheight}
+	
+	% \textbf{Basic Machine Learning Methods}
+
+    
+ 
+\end{document}
